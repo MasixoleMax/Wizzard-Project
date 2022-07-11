@@ -1,0 +1,11 @@
+body {
+  background: url("https://cdncontribute.geeksforgeeks.org/wp-content/uploads/White-LowOpacity.png");
+  background-color: rgba(135, 219, 187, 0.8);
+  background-size: 20%;
+}
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}

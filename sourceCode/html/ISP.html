@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/ISP.css">
+
+</head>
+
+<body>
+
+  <form class="modal-content animate" action="file:///C:/Users/franc/Desktop/Project%201/Forms.html" method="post">
+    <div class="container">
+      <div class="imgcontainer">
+        <img src="/directories/images/logo.png" alt="Avatar" class="avatar">
+        <h2>Individual Support Plan / Group Support Plan</h2>
+      </div>
+
+      <!--vchUniqueID-->
+      <div class="container">
+        <label for="txtUniqueId"><b> UniqueID<b></label>
+        <input type="text" name="vchUniqueID" placeholder="Enter Your UniqueID">
+
+        <!--DateTime-->
+        <div class="row">
+          <div class="col-25">
+            <label><b> DateTime</b></label>
+          </div>
+          <div class="col-75">
+            <input type="datetime-local" id="dateTime" name="dateTime">
+          </div>
+        </div></br>
+
+        <!--intPlan-->
+        <div class="row">
+          <div class="col-25">
+            <label><b> Support Plan</b></label>
+          </div>
+          <div class="col-75">
+            <select id="intPlan" name="plan">
+              <option value=""> Please select...</option>
+              <option value="1">Individual Plan</option>
+              <option value="2">Group Plan</option>
+              <option value="3">Other</option>
+            </select>
+          </div>
+        </div></br>
+
+        <!--vchClasses-->
+        <label><b> Classes<b></label>
+        <input type="text" name="vchClasses" placeholder="Enter the class">
+
+        <!--vchLearner-->
+        <label><b> Surname & Name<b></label>
+        <input type="text" name="vchLearner" placeholder="Enter Your Surname & Name">
+
+        <!--intAreaSupport-->
+        <div class="row">
+          <div class="col-25">
+            <label><b> Area Of Support</b></label>
+          </div>
+          <div class="col-75">
+            <select id="intAreaSupport" name="areaSupport">
+              <option value=""> Please select...</option>
+              <option value="1">Comprehension of concepts in Mathematics</option>
+              <option value="2">Language</option>
+              <option value="3">Listening</option>
+              <option value="4">Mathematics</option>
+              <option value="5">Phonics</option>
+              <option value="6">Sounds</option>
+              <option value="7">Other</option>
+            </select>
+          </div>
+        </div></br>
+
+        <!--intTargetAchieve-->
+        <div class="row">
+          <div class="col-25">
+            <label><b> Target To Be Achieved</b></label>
+          </div>
+          <div class="col-75">
+            <select id="intTargetAchieve" name="targetAchieve">
+              <option value="0"> Choose a group...</option>
+              <option value="1">Counting</option>
+              <option value="2">Improve comprehension of concepts</option>
+              <option value="3"> Reading with comprehension</option>
+              <option value="4">Other</option>
+            </select>
+          </div>
+        </div></br>
+
+        <!--intStrategy-->
+        <div class="row">
+          <div class="col-25">
+            <label><b> Intervention Strategy</b></label>
+          </div>
+          <div class="col-75">
+            <select id="intStrategy" name="strategy">
+              <option value="">Please select...</option>
+              <option value="1">Book club</option>
+              <option value="2">Classroom intervention</option>
+              <option value="3"> Intervention activities</option>
+              <option value="4">Other</option>
+            </select>
+          </div>
+        </div></br>
+
+        <!--intFrame-->
+        <div class="row">
+          <div class="col-25">
+            <label><b> Time Frame</b></label>
+          </div>
+          <div class="col-75">
+            <select id="intFrame" name="frame">
+              <option value="">Please select...</option>
+              <option value="1"> 1 week</option>
+              <option value="2"> 2 weeks</option>
+              <option value="3"> 10 weeks</option>
+              <option value="4"> 1 Term</option>
+              <option value="5"> Other</option>
+            </select>
+          </div>
+        </div></br>
+
+        <!--ReviewDate-->
+        <div class="row">
+          <div class="col-25">
+            <label><b> Review Date</b></label>
+          </div>
+          <div class="col-75">
+            <input type="datetime-local" id="dateTime" name="reviewDate">
+          </div>
+        </div></br>
+
+        <!--textareaComment-->
+        <div class="row">
+          <div class="col-25">
+            <label><b> Comment On Progress</b></label>
+          </div>
+          <div class="col-75">
+            <textarea id="comment" name="comment" placeholder="Write something.." style="height:150px"></textarea>
+          </div>
+        </div></br>
+
+        <!--SignatureArea-->
+        <div class="sign-area">
+          <div class="sign-block pull-left">
+            <div>Signature: <i class="fa fa-pencil" aria-hidden="true" onclick="Signature('jm38s4i1');"></i></div>
+            <canvas id="Sig-jm38s4i1" class="dig-sig " sig-id-data="jm38s4i1" signed-data="false" width="300"
+              height="50"></canvas>
+          </div>
+        </div>
+      </div></br></br></br></br>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+  <script src="../javascript/ISP.js"></script>
+</body>
+
+</html>

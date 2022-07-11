@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Account</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="theme-color" content="#4CB96B" />
+    <link rel="shortcut icon" href="https://www.geeksforgeeks.org/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/testPage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://authcdn.geeksforgeeks.org/css/auth.min.css?ver=0.8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="/js/typeahead.bundle.min.js"></script>
+    <div class="container container-table">
+        <div class="row vertical-center-row">
+            <div class="submit-loader">
+                <div class="loader spinLoader"></div>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 no-email-main-div">
+                <div class="row text-center">
+                    <img class="logo" src="/directories/images/logo.png">
+                    </a>
+                </div>
+                <hr>
+                <div class="row">
+                    <p class="head-msg">Complete your Profile to continue </p>
+                    <div class="col-xs-2 col-xs-offset-5 text-center column-div">
+                        <!--Profile Image Edit Code
+                    <button class="profile-edit-icon" style="position:absolute;top:69%;right:15%;background:#fff;color:#404040;border-radius:75%;width:37px;">
+                    <i class="material-icons">edit</i>
+                    </button>
+                    <input type="file" class="imageFile" style="display:none">
+                    
+                    <img alt="potelwapelokazi94" src="https://media.geeksforgeeks.org/img-practice/user_web-1598433228.svg" class="avatar">-->
+                    </div>
+                    <div class="col-xs-12 column-div">
+                        <form class="form-horizontal no-email-form">
+
+                            <div class="form-group">
+                                <label class="col-sm-12">Class</label>
+                                <select name="school_class" class="selectpicker form-control">
+                                    <option value="" disabled selected>Select School Class</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+
+                                </select>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-sm-12 fill-email pull-left">First Name</label>
+                        <input class="form-control typeahead" type="text" name="name" maxlength="50"
+                            placeholder="Enter Your Name" value="">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-sm-12 fill-email pull-left">Last Name</label>
+                        <input class="form-control typeahead" type="text" name="name" maxlength="50"
+                            placeholder="Enter Your Last Name" value="">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-sm-12 fill-email pull-left">Email adress</label>
+                        <input class="form-control typeahead" type="text" name="name" maxlength="50"
+                            placeholder="Enter Your Email address" value="">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="fieldset5"><label class="col-sm-12 fill-email pull-left">Designation</label>
+                            </legend>
+                            <input type="radio" id="vchTeacher" name="designation" value="Teacher">
+                            <label for="teacher"> Teacher</label>
+                            <input type="radio" id="vchPrincipal" name="designation" value="Principal">
+                            <label for="principal"> Principal</label>
+                            <input type="radio" id="vchDeputyPrincipal" name="designation" value="Deputy">
+                            <label for="deputyPrincipal"> Deputy Principal</label>
+                            <input type="radio" id="vchHead" name="designation" value="Head">
+                            <label for="head"> Departmental Head</label>
+                            <input type="radio" id="vchAdmin" name="designation" value="Admin">
+                            <label for="admin"> School Admin</label>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-sm-12 fill-email pull-left"
+                            for="formGroupInputInst">Institution/Organization</label>
+                        <input class="form-control typeahead" type="text" name="institute" autocomplete="off"
+                            id="formGroupInputInst" maxlength="300" placeholder="Enter Your Institution/Organization">
+                    </div>
+                </div>
+                <input type="hidden" name="roadblock_csrf_token" value="22bb8baf0e36fca8885ff226183f38b2">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-sm-12 fill-email pull-left" for="formGroupInput">Display Name</label>
+                        <input class="form-control typeahead" type="text" name="name" maxlength="50"
+                            placeholder="Enter Your Name" value="">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-sm-12 fill-email pull-left" for="formGroupInput">Gender</label>
+                        <select name="gender" class="selectpicker form-control">
+                            <option value="" disabled selected>Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-sm-12 fill-email pull-left" for="formGroupInput">Contact Number</label>
+                        <input class="form-control typeahead" type="text" id="phone" name="phone" value=""
+                            onkeypress="return isNumber(event)" maxlength="20" placeholder="Enter Your Contact Number">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-sm-12 fill-email pull-left" for="formGroupInput">Highest Qualification</label>
+                        <select name="hq_details" class="selectpicker form-control">
+                            <option value="" disabled selected>Select Highest Qualification</option>
+                            <option value='0'>B.Tech</option>
+                            <option value='1'>M.Tech</option>
+                            <option value='2'>B.Sc</option>
+                            <option value='3'>M.Sc</option>
+                            <option value='4'>BCA</option>
+                            <option value='5'>MCA</option>
+                            <option value='6'>BBA</option>
+                            <option value='7'>MBA</option>
+                            <option value='9'>Undergraduate(School)</option>
+                            <option value='8'>Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6 other-qualification-container focused" style="display:none;">
+                    <div class="form-group">
+                        <label class="col-sm-12 fill-email pull-left" for="other_qualification">Other
+                            Qualification</label>
+                        <input class="form-control other_qualification" type="text" maxlength="300"
+                            name="other_qualification">
+                    </div>
+                </div>
+                <div class="col-sm-6" id="graduation-year-div">
+                    <div class="form-group">
+                        <label class="col-sm-12 fill-email pull-left" for="formGroupInput">Graduation Year</label>
+                        <input class="form-control typeahead" type="text" id="graduation_year" name="graduation_year"
+                            value="" onkeypress="return isNumber(event)" maxlength="4"
+                            placeholder="Graduation Year e.g. 2019">
+                    </div>
+                </div>
+                <div class="col-sm-6 hide" id="school-class-div">
+                    <div class="form-group">
+                        <label class="col-sm-12 fill-email pull-left" for="formGroupInput">Class</label>
+                        <select name="school_class" class="selectpicker form-control">
+                            <option value="" disabled selected>Select School Class</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6" id="work-experience-div">
+                    <div class="form-group">
+                        <label class="col-sm-12 fill-email pull-left" for="formGroupInput">Work Experience(in
+                            years)</label>
+                        <input class="form-control typeahead" type="text" id="work_experience" name="work_experience"
+                            onkeypress="return isNumber(event)" maxlength="2"
+                            placeholder="Work Experience in Years e.g. 3" value="">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-sm-12 fill-email pull-left" for="formGroupInput">State</label>
+                        <select name="stateid" class="selectpicker form-control">
+                            <option value="" disabled selected>Select State</option>
+                            <option value='6'>Andaman and Nicobar Islands</option>
+                            <option value='7'>Andhra Pradesh</option>
+                            <option value='8'>Arunachal Pradesh</option>
+                            <option value='9'>Assam</option>
+                            <option value='10'>Bihar</option>
+                            <option value='11'>Chandigarh</option>
+                            <option value='12'>Chhattisgarh</option>
+                            <option value='13'>Dadra and Nagar Haveli</option>
+                            <option value='14'>Daman & Diu</option>
+                            <option value='4'>Delhi</option>
+                            <option value='15'>Goa</option>
+                            <option value='16'>Gujarat</option>
+                            <option value='17'>Haryana</option>
+                            <option value='18'>Himachal Pradesh</option>
+                            <option value='19'>Jammu and Kashmir</option>
+                            <option value='20'>Jharkhand</option>
+                            <option value='2'>Karnataka</option>
+                            <option value='21'>Kerala</option>
+                            <option value='22'>Lakshadweep</option>
+                            <option value='23'>Madhya Pradesh</option>
+                            <option value='24'>Maharashtra</option>
+                            <option value='25'>Manipur</option>
+                            <option value='26'>Meghalaya</option>
+                            <option value='27'>Mizoram</option>
+                            <option value='28'>Nagaland</option>
+                            <option value='29'>Odisha</option>
+                            <option value='30'>Puducherry</option>
+                            <option value='31'>Punjab</option>
+                            <option value='32'>Rajasthan</option>
+                            <option value='33'>Sikkim</option>
+                            <option value='34'>Tamil Nadu</option>
+                            <option value='3'>Telangana</option>
+                            <option value='35'>Tripura</option>
+                            <option value='5'>Uttar Pradesh</option>
+                            <option value='36'>Uttarakhand</option>
+                            <option value='37'>West Bengal</option>
+                            <option value='1'>Outside India</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-sm-12 fill-email pull-left" for="city">City</label>
+                        <input class="form-control typeahead" type="text" id="city" name="city" maxlength="60" value=""
+                            placeholder="Enter Your City Name">
+                    </div>
+                </div>
+                <!--Resume Upload Code
+                        <div  classs="form-group">
+                            <div class="col-sm-6" style="margin-top:5px;">
+                                <input type="file" accept="application/pdf" style="display:none;" name="userResume" class="form-control d-none" id="userResume">
+                                <input type="button" class="col-xs-5 resume-upload-btn" value="Upload Resume" onclick="$('#userResume').click();">
+                                <span id="resumeInfo" class="col-xs-7">Choose File</span>
+                            </div>
+                        </div>
+                        -->
+                <p class="col-xs-12 response text-center"></p>
+                <div class="col-sm-12">
+                    <button type="submit" class="btn btn-success accept-btn pull-right">Submit</button>
+                    <button class="btn btn-default skip-btn pull-right" style="margin-right: 10px;">Skip</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

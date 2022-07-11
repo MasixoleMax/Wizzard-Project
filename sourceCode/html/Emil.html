@@ -1,0 +1,79 @@
+<div class="container">
+  <label for="txtUniqueId"><b> Unique ID</b></label>
+  <input type="text" name="txtUniqueId" required>
+
+  <label for="dateTime"><b> DateTime</b></label>
+  <input type="datetime-local" id="dateTime" name="dateTime"><br><br>
+
+  <label for="txtUsername"><b> Support Plan</b></label>
+  <input type="text" name="txtUsername" required>
+
+  <label for="txtClass"><b> Classes</b></label>
+  <input type="text" name="txtClass" required>
+
+  <label for="txtSurnameName"><b> Surname & Name</b></label>
+  <input type="text" name="txtSurnameName" required>
+
+  <label for="txtSurnameName"><b> Area Of Support</b></label>
+  <input type="text" name="txtSurnameName" required>
+
+  <label for="txtSurnameName"><b> Target To Be Achieved</b></label>
+  <input type="text" name="txtSurnameName" required>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  message = ""
+  confirmationToken = Request("confirmationCode")
+
+  WebSecurity.Logout()
+
+  if !confirmationToken.IsEmpty() then
+  if WebSecurity.ConfirmAccount(confirmationToken) then
+  message = "Registration Confirmed"
+  else
+  message = "Could not confirm your registration"
+  end if
+  end if
+
+  <label for="subject">Subject</label>
+  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+
+
+  <input type="checkbox" id="teacher" name="teacher" value="Teacher">
+  <label for="teacher"> Teacher</label><br>
+  <input type="checkbox" id="principal" name="principal" value="Principal">
+  <label for="principal"> Principal</label><br>
+  <input type="checkbox" id="deputyPrincipal" name="deputyPrincipal" value="Deputy">
+  <label for="deputyPrincipal"> Deputy Principal</label><br>
+  <input type="checkbox" id="head" name="head" value="Head">
+  <label for="head"> Departmental Head</label><br>
+  <input type="checkbox" id="admin" name="admin" value="Admin">
+  <label for="admin"> School Admin</label><br>
+
+
+  <legend><i class="fa fa-home fa-fw"></i><label><b> Department<b></label></legend>
+  <input type="radio" id="foundation" name="dep_levels" value="Foundation">
+  <label for="foundation"> Foundation Phase</label>
+  <input type="radio" id="intermediate" name="dep_levels" value="Intermediate">
+  <label for="intermediate"> Intermediate Phase</label>
+  <input type="radio" id="senior" name="dep_levels" value="Senior">
+  <label for="senior"> Senior Phase</label>
+  <input type="radio" id="fet" name="dep_levels" value="FET">
+  <label for="fet"> FET Phase</label>

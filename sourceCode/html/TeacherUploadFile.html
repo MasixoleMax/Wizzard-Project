@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/teacherUploadFile.css">
+    <!-- integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="imgcontainer">
+            <img src="/directories/images/logo.png" class="avatar">
+        </div>
+        <h2 class="text-center mt-4 mb-4">Kindly upload the excel file below</h2>
+        <p>Please make sure the uploaded excel file matches with the below excel template and if not the file will not
+            be uploaded successfully.</p>
+        <iframe src='C:\Users\franc\Desktop\Project 1\Referral documents\Template.png' width='60%' height='225px'
+            frameborder='0'> </iframe>
+        <div class="card">
+            <div class="card-header"><b>Select Excel File</b></div>
+            <div class="card-body">
+
+                <input type="file" id="excel_file" />
+                <input type="button" id="upload" value="Upload" onclick="Upload()" />
+            </div>
+        </div>
+        <div id="excel_data" class="mt-5"></div>
+    </div>
+    <script src="../javascript/teacherUploadFile.js"></script>
+</body>
+
+</html>

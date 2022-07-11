@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--links-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/newAccount.css">
+
+</head>
+
+<body>
+  <form class="modal-content animate" action="file:///C:/Users/franc/Desktop/Project%201/login.html" method="post">
+
+    <div class="container">
+      <div class="imgcontainer">
+        <img src="/directories/images/logo.png" alt="Avatar" class="avatar">
+        <p class="head-msg">Complete your Profile to continue </p>
+      </div>
+
+      <div class="container">
+        <!--intClasses-->
+        <div class="row">
+          <div class="col-25">
+            <label><b> Class </b></label>
+          </div>
+          <div class="col-75">
+            <select id="intclass" name="class">
+              <option value="">Please select...</option>
+              <option value="1">Grade 1</option>
+              <option value="2">Grade 2</option>
+              <option value="3">Grade 3</option>
+              <option value="4">Grade 4</option>
+              <option value="5">Grade 5</option>
+              <option value="6">Grade 6</option>
+              <option value="7">Grade 7</option>
+            </select>
+          </div>
+        </div></br>
+
+        <!--vchUsername-->
+        <i class="fa fa-user"></i><label><b> Username<b></label>
+        <input type="text" name="vchUsername" class="required" placeholder="Enter Your Username">
+
+        <!--vchFirstName-->
+        <i class="fa fa-id-badge"></i><label><b> First Name<b></label>
+        <input type="text" name="vchFirstName" class="required" placeholder="Enter Your First Name">
+
+        <!--vchLastName-->
+        <i class="fa fa-user-circle-o"></i><label><b> Last Name<b></label>
+        <input type="text" name="vchLastName" class="required" placeholder="Enter Your Last Name">
+
+        <!--vchEnail-->
+        <i class="fa fa-envelope"></i><label><b> Email</b></label>
+        <input type="text" name="email" id="email" class="required"
+          placeholder="Enter email address pelokazi@profas.co.za"><br>
+
+        <!--Fieldset for intDesignation-->
+        <fieldset>
+          <legend class="fieldset5"><i class="fa fa-book fa-fw"></i><label><b> Designation<b></label></legend>
+          <input type="radio" id="vchTeacher" name="designation" value="Teacher">
+          <label for="teacher"> Teacher</label>
+          <input type="radio" id="vchPrincipal" name="designation" value="Principal">
+          <label for="principal"> Principal</label>
+          <input type="radio" id="vchDeputyPrincipal" name="designation" value="Deputy">
+          <label for="deputyPrincipal"> Deputy Principal</label>
+          <input type="radio" id="vchHead" name="designation" value="Head">
+          <label for="head"> Departmental Head</label>
+          <input type="radio" id="vchAdmin" name="designation" value="Admin">
+          <label for="admin"> School Admin</label>
+        </fieldset>
+        <div><br></br></div>
+
+        <!--Fieldset for intDepartment-->
+        <fieldset>
+          <legend><i class="fa fa-home fa-fw"></i><label><b> Department<b></label></legend>
+          <input type="checkbox" id="foundation" name="dep_levels" value="Foundation">
+          <label for="foundation"> Foundation Phase</label><br>
+          <input type="checkbox" id="intermediate" name="dep_levels" value="Intermediate">
+          <label for="intermediate"> Intermediate Phase</label><br>
+          <input type="checkbox" id="senior" name="dep_levels" value="Senior">
+          <label for="senior"> Senior Phase</label><br>
+          <input type="checkbox" id="fet" name="dep_levels" value="Fet">
+          <label for="fet"> FET Phase</label><br>
+        </fieldset>
+        <div><br></br></div>
+
+        <!--vchNewPassword-->
+        <i class="fa fa-key fa-fw"></i><label><b> New password</b></label>
+        <input type="password" id="vchNewPassword" name="vchNewPassword" class="required"
+          placeholder="Password should include Capital letters/symbols">
+
+        <!--vchRepeatPassword-->
+        <i class="fa fa-key fa-fw"></i><label><b> Repeat password</b></label>
+        <input type="password" id="vchRepeatPassword" name="vchRepeatPassword" class="required"
+          placeholder="Repeat password">
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+
+        <div class="container signin">
+          <p>Already have an account? <a href="file:///C:/Users/franc/Desktop/Project%201/login.html">Sign in</a></span>
+          </p>
+        </div>
+      </div>
+      <div></div>
+    </div>
+    <script src="../javascript/newAccount.js"></script>
+
+</body>
+
+</html>

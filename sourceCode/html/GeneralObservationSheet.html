@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/generalObservationSheet.css">
+</head>
+
+<body>
+
+  <form class="modal-content animate" action="file:///C:/Users/franc/Desktop/Project%201/Forms.html" method="post">
+    <div class="container">
+      <div class="imgcontainer">
+        <img src="/directories/images/logo.png" alt="Avatar" class="avatar">
+        <h2>General Observation Sheet</h2>
+      </div>
+
+      <div class="container">
+
+        <!-- vchUniqueID -->
+        <label><b> UniqueID<b></label>
+        <input type="text" name="vchUniqueId" class="required" placeholder="Enter Your UniqueID">
+
+        <!-- DateTime -->
+        <div class="row">
+          <div class="col-25">
+            <label><b> DateTime</b></label>
+          </div>
+          <div class="col-75">
+            <input type="datetime-local" id="dateTime" name="dateTime">
+          </div>
+        </div></br>
+
+        <!-- vchClassesG -->
+        <label><b> Classes<b></label>
+        <input type="text" name="vchClassesG" placeholder="Enter the Class">
+
+        <!-- vchLearnerG -->
+        <label><b> Surname & Name<b></label>
+        <input type="text" name="vchLearnerG" placeholder="Enter Your Surname & Name">
+
+        <!-- vchLearnerID -->
+        <label><b> LearnerID<b></label>
+        <input type="text" name="vchlearnerId" class="required" placeholder="Enter Your LearnerID">
+
+        <!-- intRemarks -->
+        <div class="row">
+          <div class="col-25">
+            <label><b> Remarks</b></label>
+          </div>
+          <div class="col-75">
+            <textarea id="remarks" name="intRemarks" placeholder="Write something.." style="height:100px"></textarea>
+          </div>
+        </div></br>
+
+        <!-- Incident image -->
+        <label><b> Incident Image</b></label>
+        <input type="file" id="imageI" name="imageI" accept="image/png, image/jpeg, image/png">
+
+        <!-- Signature Area -->
+        <div class="sign-area">
+          <div class="sign-block pull-left">
+            <div>Signature: <i class="fa fa-pencil" aria-hidden="true" onclick="Signature('jm38s4i1');"></i></div>
+            <canvas id="Sig-jm38s4i1" class="dig-sig " sig-id-data="jm38s4i1" signed-data="false" width="300"
+              height="50"></canvas>
+          </div>
+        </div>
+      </div></br></br></br>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+  <script src="../javascript/generalObservationsheets.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/learnerProfile.css">
+</head>
+
+<body>
+
+  <form class="modal-content animate" action="file:///C:/Users/franc/Desktop/Project%201/Forms.html" method="post">
+    <div class="container">
+      <div class="imgcontainer">
+        <img src="/directories/images/logo.png" alt="Avatar" class="avatar">
+        <h2>Learner Profile</h2>
+      </div>
+      <div class="column">
+        <fieldset>
+          <legend class="fieldset5">Header1</legend>
+          <label><b> ID<b>*</label>
+          <input type="text" name="vchId" class="required" placeholder="Enter Your UniqueId">
+
+          <div class="row">
+            <div class="col-25">
+              <label class="col-sm-12 fill-date pull-left"><b> DateTime</b></label>
+            </div>
+            <div class="col-75">
+              <input type="datetime-local" id="dateTime" name="dateTime">
+            </div>
+          </div></br>
+
+          <label><b> Teacher Name<b></label>
+          <input type="text" name="vchTeacherL" class="required" placeholder="Enter Your Teacher Name">
+
+          <label class="col-sm-12 fill-email pull-left"><b> Email</b></label>
+          <input type="text" name="email" id="email" class="required"
+            placeholder="Enter email address pelokazi@profas.co.za">
+        </fieldset>
+        <fieldset>
+          <legend class="fieldset5">Header2</legend>
+          <label><b> Surname & Name<b></label>
+          <input type="text" name="vchLearner1" class="required" placeholder="Enter Your Surname & Name">
+
+          <label><b> LearnerID<b></label>
+          <input type="text" name="vchLearnerID" class="required" placeholder="Enter Your LearnerID">
+
+          <label><b> Called/Noemnaam<b></label>
+          <input type="text" name="vchCalled" placeholder="Enter Your Called">
+
+          <div class="row">
+            <div class="col-25">
+              <label><b> Gender</b></label>
+            </div>
+            <div class="col-75">
+              <select id="intGender" name="gender">
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <label><b> Home Language<b></label>
+            <input type="text" name="vchHomeLanguange" placeholder="Enter Your Hoem Language">
+
+            <label><b> ID Number<b></label>
+            <input type="text" name="vchIdNo" placeholder="Enter Your ID No">
+
+            <label><b> CEMIS No<b></label>
+            <input type="text" name="vchCEMIS" placeholder="Enter Your CEMIS">
+
+            <label><b> Number of children in household or family<b></label>
+            <input type="text" name="vchNumberOfHousehold" placeholder="Enter the number of childern in household">
+
+            <label><b> Position in Family<b></label>
+            <input type="text" name="vchPosition" placeholder="Enter Your position in Family">
+
+            <label><b> Religion<b></label>
+            <input type="text" name="vchReligion" placeholder="Enter Your Religion">
+
+            <div class="row">
+              <div class="col-25">
+                <label><b> Disability</b></label>
+              </div>
+              <div class="col-75">
+                <select id="intDisability" name="disability">
+                  <option value="" disabled selected>Select Gender</option>
+                  <option value="male">Yes</option>
+                  <option value="female">No</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <label><b> Type of Social Grant<b></label>
+              <input type="text" name="vchGrant" placeholder="Enter the type of grant">
+        </fieldset>
+
+        <fieldset>
+          <legend class="fieldset5">Header 3</legend>
+          <label><b> Family Doctor<b></label>
+          <input type="text" name="vchDoctor" placeholder="Enter Your Family doctor">
+
+          <label><b> Doctor Contact No</b></label>
+          <input type="text" pattern="^\+[0-9]{7,17}$" id="vchMobile" name="vchMobile" placeholder="+2772 472 9025">
+
+          <label><b> Allergies<b></label>
+          <input type="text" name="vchAllergies" placeholder="Enter Your Allergies">
+
+          <label><b> Chronic illness<b></label>
+          <input type="text" name="vchIllness" placeholder="Enter Your chronic illness">
+
+          <label><b> Name of Medical Aid<b></label>
+          <input type="text" name="vchMedical" placeholder="Enter the name of your medical aid">
+
+          <label><b> Medical Aid No<b></label>
+          <input type="text" name="vchMedicalNo" placeholder="Enter Your medical aid No">
+
+          <label><b> Name of Principal Member<b></label>
+          <input type="text" name="vchPrincipalM" placeholder="Enter Your Principal Member">
+
+          <label><b> Contact person in case of Emergency<b></label>
+          <input type="text" pattern="^\+[0-9]{7,17}$" id="vchMobile" name="vchMobile" placeholder="+2772 472 9025">
+
+          <label><b> Emergency Contact No</b></label>
+          <input type="text" pattern="^\+[0-9]{7,17}$" id="vchContact" name="vchContact" placeholder="+2772 472 9025">
+
+          <div class="row">
+            <div class="col-25">
+              <label><b> Road to health card shown</b></label>
+            </div>
+            <div class="col-75">
+              <select id="inthealthCard" name="healthCard">
+                <option value=""> Please select...</option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+              </select>
+            </div>
+          </div></br>
+
+          <label><b> Card Number<b></label>
+          <input type="text" name="vchCardNumber" placeholder="Enter Your Card No">
+
+          <div class="row">
+            <div class="col-25">
+              <label><b> Child's growth progress</b></label>
+            </div>
+            <div class="col-75">
+              <select id="intGrowth" name="growth">
+                <option value=""> Please select...</option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+              </select>
+            </div>
+          </div></br>
+
+          <div class="row">
+            <div class="col-25">
+              <label><b> Comment</b></label>
+            </div>
+            <div class="col-75">
+              <textarea id="comment1" name="comment1" placeholder="Write something.." style="height:100px"></textarea>
+            </div>
+          </div></br>
+
+          <label><b> Prenatal / postnatal information<b></label>
+          <input type="text" name="vchPostNatal" placeholder="Enter Your Prenatal information">
+
+          <div class="row">
+            <div class="col-25">
+              <label><b> Comment</b></label>
+            </div>
+            <div class="col-75">
+              <textarea id="comment2" name="comment2" placeholder="Write something.." style="height:100px"></textarea>
+            </div>
+          </div></br>
+
+          <div class="row">
+            <div class="col-25">
+              <label><b> Immunisation record</b></label>
+            </div>
+            <div class="col-75">
+              <select id="intImmunisation" name="imunisation">
+                <option value=""> Please select...</option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+              </select>
+            </div>
+          </div></br>
+
+          <div class="row">
+            <div class="col-25">
+              <label><b> Comment</b></label>
+            </div>
+            <div class="col-75">
+              <textarea id="comment3" name="comment3" placeholder="Write something.." style="height:100px"></textarea>
+            </div>
+          </div></br>
+
+          <label><b> Visual and hearing screening results<b></label>
+          <input type="text" name="vchVisual" placeholder="Enter Your Visual/Hearing results">
+
+          <div class="row">
+            <div class="col-25">
+              <label><b> Comment</b></label>
+            </div>
+            <div class="col-75">
+              <textarea id="comment4" name="comment4" placeholder="Write something.." style="height:100px"></textarea>
+            </div>
+          </div></br>
+
+          <label><b> Hospital admissions<b></label>
+          <input type="text" name="vchHospital" placeholder="Enter Your Hospital admissions">
+
+          <div class="row">
+            <div class="col-25">
+              <label><b> Comment</b></label>
+            </div>
+            <div class="col-75">
+              <textarea id="comment5" name="comment5" placeholder="Write something.." style="height:100px"></textarea>
+            </div>
+          </div></br>
+
+          <div class="row">
+            <div class="col-25">
+              <label><b> Any developmental problems in the in need of special care section</b></label>
+            </div>
+            <div class="col-75">
+              <select id="intSpecialCare" name="specialCare">
+                <option value=""> Please select...</option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+              </select>
+            </div>
+          </div><br>
+
+          <div class="row">
+            <div class="col-25">
+              <label><b> Comment</b></label>
+            </div>
+            <div class="col-75">
+              <textarea id="comment6" name="comment6" placeholder="Write something.." style="height:100px"></textarea>
+            </div>
+          </div></br>
+
+          <div class="row">
+            <div class="col-25">
+              <label><b> Any chronic condition</b></label>
+            </div>
+            <div class="col-75">
+              <select id="intSpecialCare" name="specialCare">
+                <option value=""> Please select...</option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+              </select>
+            </div>
+          </div><br>
+
+          <div class="row">
+            <div class="col-25">
+              <label><b> Comment</b></label>
+            </div>
+            <div class="col-75">
+              <textarea id="comment7" name="comment7" placeholder="Write something.." style="height:100px"></textarea>
+            </div>
+          </div></br>
+
+          <label><b> Parent/Guardian<b></label>
+          <input type="text" name="vchGuardian" placeholder="Enter Your Parent/Gurdain information">
+
+          <label><b> Father's surname and Initial(s)<b></label>
+          <input type="text" name="vchInitialsF" placeholder="Enter Your Father's Initials">
+
+          <label><b> Father's Occupation<b></label>
+          <input type="text" name="vchOccupationF" placeholder="Enter Your Father's Occupation">
+
+          <div class="row">
+            <div class="col-25">
+              <label><b> Fathers Physical Address</b></label>
+            </div>
+            <div class="col-75">
+              <textarea id="comment8" name="comment8" style="height:100px"></textarea>
+            </div>
+          </div></br>
+
+          <div class="row">
+            <div class="col-25">
+              <label><b> Father's Postal Address</b></label>
+            </div>
+            <div class="col-75">
+              <textarea id="comment9" name="comment9" style="height:100px"></textarea>
+            </div>
+          </div></br>
+
+          <label><b> Father's City/Town<b></label>
+          <input type="text" name="vchCity" placeholder="Enter Your Father's City/Town">
+
+          <label><b> Father's Telephone (home)</b></label>
+          <input type="text" pattern="^\+[0-9]{7,17}$" id="vchTelephone" name="vchTelephone"
+            placeholder="+2721 406 1555">
+
+          <label><b> Father's Telephone (work)</b></label>
+          <input type="text" pattern="^\+[0-9]{7,17}$" id="vchTelephoneW" name="vchTelephoneW"
+            placeholder="+2721 406 1555">
+
+          <label><b> Father's Email</b></label>
+          <input type="text" name="email" id="email" placeholder="pelokazi@profas.co.za">
+
+          <label><b> Mother's surname and Initial(s)<b></label>
+          <input type="text" name="vchInitialsM" placeholder="Enter Your MOther's surname/intitials">
+
+          <label><b> Mother's Occupation<b></label>
+          <input type="text" name="vchOccupationM" placeholder="Enter Your Mother's Occupation">
+
+          <div class="row">
+            <div class="col-25">
+              <label><b> Mother's Physical Address</b></label>
+            </div>
+            <div class="col-75">
+              <textarea id="comment10" name="comment10" style="height:100px"></textarea>
+            </div>
+          </div></br>
+
+          <div class="row">
+            <div class="col-25">
+              <label><b> Mother's Postal Address</b></label>
+            </div>
+            <div class="col-75">
+              <textarea id="comment11" name="comment11" style="height:100px"></textarea>
+            </div>
+          </div></br>
+
+          <label><b> Mother's City/Town<b></label>
+          <input type="text" name="vchTown" placeholder="Enter Your Mother's City/Town">
+
+          <label><b> Mother's Telephone (home)</b></label>
+          <input type="text" pattern="^\+[0-9]{7,17}$" id="vchTelephoneM" name="vchTelephoneM"
+            placeholder="+2721 406 1555">
+
+          <label><b> Mother's Telephone (work)</b></label>
+          <input type="text" pattern="^\+[0-9]{7,17}$" id="vchTelephoneWM" name="vchTelephoneWM"
+            placeholder="+2721 406 1555">
+
+          <label><b> Mother's Email</b></label>
+          <input type="text" name="email" id="email" placeholder="pelokazi@profas.co.za">
+
+          <label><b> Gurdain's surname and Initial(s)<b></label>
+          <input type="text" name="vchInitials" placeholder="Enter Your Gurdain's surname/initials">
+
+          <label><b> Gurdain's Occupation<b></label>
+          <input type="text" name="vchOccupationG" placeholder="Enter Your Gurdain's occupation">
+
+          <div class="row">
+            <div class="col-25">
+              <label><b> Gurdain's Physical Address</b></label>
+            </div>
+            <div class="col-75">
+              <textarea id="comment12" name="comment12" style="height:100px"></textarea>
+            </div>
+          </div></br>
+
+          <div class="row">
+            <div class="col-25">
+              <label><b> Gurdain's Postal Address</b></label>
+            </div>
+            <div class="col-75">
+              <textarea id="comment13" name="comment13" style="height:100px"></textarea>
+            </div>
+          </div></br>
+
+          <label><b> Gurdian's City/Town<b></label>
+          <input type="text" name="vchCityG">
+
+          <label><b> Gurdain's Telephone (home)</b></label>
+          <input type="text" pattern="^\+[0-9]{7,17}$" id="vchTelephoneG" name="vchTelephoneG"
+            placeholder="+2721 406 1555">
+
+          <label><b> Gurdain's Telephone (work)</b></label>
+          <input type="text" pattern="^\+[0-9]{7,17}$" id="vchTelephoneWG" name="vchTelephoneWG"
+            placeholder="+2721 406 1555">
+
+          <label><b> Gurdian's Email</b></label>
+          <input type="text" name="email" id="email" placeholder="pelokazi@profas.co.za">
+        </fieldset>
+        <fieldset>
+          <legend class="fieldset">Header 4</legend>
+          <label><b> Surname & Name<b></label>
+          <input type="text" name="vchSurnameName">
+
+          <label><b> ID Number<b></label>
+          <input type="text" name="vchId">
+
+          <label><b> Contact Details</b></label>
+          <input type="text" pattern="^\+[0-9]{7,17}$" id="vchContactD" name="vchContactD">
+
+          <label><b> Relationship<b></label>
+          <input type="text" name="vchRelationship">
+        </fieldset>
+        <fieldset>
+          <legend class="fieldset5">Header 5</legend>
+          <label><b> Surname & Name<b></label>
+          <input type="text" name="vchSurnameN">
+
+          <label><b> ID Number<b></label>
+          <input type="text" name="vchIdN">
+
+          <label><b> Contact Details</b></label>
+          <input type="text" pattern="^\+[0-9]{7,17}$" id="vchContactDD" name="vchContactDD">
+
+          <label><b> Relationship<b></label>
+          <input type="text" name="vchRelationshipP">
+        </fieldset>
+
+        <fieldset>
+          <legend class="fieldset">Header 5</legend>
+          <div class="row">
+            <div class="col-25">
+              <label><b> 0 - 5 years</b></label>
+            </div>
+            <div class="col-75">
+              <select id="intPlan" name="plan">
+                <option value=""> Please select...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div></br>
+          <div class="row">
+            <div class="col-25">
+              <label><b> Area of need</b></label>
+            </div>
+            <div class="col-75">
+              <textarea id="comment14" name="comment14" style="height:100px"></textarea>
+            </div>
+          </div></br>
+          <div class="row">
+            <div class="col-25">
+              <label><b> Services and interventions received</b></label>
+            </div>
+            <div class="col-75">
+              <textarea id="comment15" name="comment15" style="height:100px"></textarea>
+            </div>
+          </div></br>
+          <fieldset>
+            <legend>Header 7</legend>
+            <label><b> Name of School<b></label>
+            <input type="text" name="vchNameSchool">
+            <label><b> EMIS NO<b></label>
+            <input type="text" name="vchEmisNo">
+            <label><b> Lolt<b></label>
+            <input type="text" name="vchLolt">
+            <label><b> Admission<b></label>
+            <input type="text" name="vchAdmission">
+            <div class="row">
+              <div class="col-25">
+                <label class="col-sm-12 fill-date pull-left"><b> DateTime</b></label>
+              </div>
+              <div class="col-75">
+                <input type="datetime-local" id="dateTime" name="dateTime">
+              </div>
+            </div></br>
+            <label><b> Grade<b></label>
+            <input type="text" name="vchGrade">
+            <label><b> Departure<b></label>
+            <input type="text" name="vchDeparture">
+            <div class="row">
+              <div class="col-25">
+                <label class="col-sm-12 fill-date pull-left"><b> DateTime</b></label>
+              </div>
+              <div class="col-75">
+                <input type="datetime-local" id="dateTime" name="dateTime">
+              </div>
+            </div></br>
+            <label><b> Grade<b></label>
+            <input type="text" name="vchGrade2">
+          </fieldset>
+          <fieldset>
+            <legend>Header 8</legend>
+            <label><b> Year<b></label>
+            <input type="text" name="vchYear">
+            <label><b> Activity<b></label>
+            <input type="text" name="vchActivity">
+            <label><b> Certificate<b></label>
+            <input type="text" name="vchCertificate">
+            <label><b> Organisation/Other<b></label>
+            <input type="text" name="vchOrganisation">
+          </fieldset>
+          <label><b> Generate Report<b></label>
+          <input type="text" name="vchReport">
+          <label><b> Incident Image</b></label>
+          <input type="file" id="imageI" name="imageI" accept="image/png, image/jpeg, image/png">
+
+          <div class="sign-area">
+            <div class="sign-block pull-left">
+              <div>Signature: <i class="fa fa-pencil" aria-hidden="true" onclick="Signature('jm38s4i1');"></i></div>
+              <canvas id="Sig-jm38s4i1" class="dig-sig " sig-id-data="jm38s4i1" signed-data="false" width="300"
+                height="50"></canvas>
+            </div>
+          </div>
+      </div></br></br></br>
+      <button style="width:auto;" type="Submit">Submit</button>
+    </div>
+  </form>
+  <script src="../javascript/learnerProfile.js"></script>
+</body>
+
+</html>
